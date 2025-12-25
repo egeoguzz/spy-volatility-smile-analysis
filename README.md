@@ -27,7 +27,7 @@ The raw dataset consisted of high-frequency options data (~2GB). Processing this
 ### 1. The Volatility Smile
 The analysis confirms the existence of a pronounced volatility skew. As demonstrated in the generated plots, OTM Puts trade at significantly higher implied volatilities than ATM Calls, reflecting the market's structural demand for downside protection.
 
-*(See `images/volatility_smile.png` in the repository)*
+![Volatility Smile Analysis](images/volatility_smile.png)
 
 ### 2. The "Vega Paradox" During Crisis
 Comparing the Vega term structure between November 2021 (Normal) and March 2020 (Crisis) revealed a counter-intuitive finding. Despite the massive spike in Implied Volatility during the crash, the absolute Vega values were lower than in the normal regime.
@@ -39,7 +39,12 @@ Vega scales with the underlying asset price ($S$).
 
 The ~40% drop in the spot price exerted a stronger downward pressure on the raw Vega calculation than the upward pressure from increased volatility. This highlights a critical distinction between percentage-based risk (IV) and dollar-based risk exposure.
 
-*(See `images/crisis_vs_normal.png` in the repository)*
+![Vega Term Structure Crisis vs Normal](images/crisis_vs_normal.png)
+
+### 3. Interactive Volatility Surface (3D Visualization)
+To visualize the complete volatility structure across all strikes and maturities simultaneously, I generated a 3D surface plot. This illustrates the "Smirk" effect across the term structure.
+
+![3D Volatility Surface](images/volatility_surface_3d.png)
 
 ## Repository Structure
 
@@ -51,7 +56,7 @@ The ~40% drop in the spot price exerted a stronger downward pressure on the raw 
 
 Due to GitHub's file size limits, the raw dataset is hosted on Kaggle. The notebook is configured to fetch data directly or can be run via the Kaggle platform.
 
-[View the Dataset and Notebook on Kaggle]((https://www.kaggle.com/code/smailegeouz/analysis-of-the-volatility-smile-in-spy-options))
+[View the Dataset and Notebook on Kaggle](https://www.kaggle.com/code/smailegeouz/analysis-of-the-volatility-smile-in-spy-options)
 
 ## License
 
