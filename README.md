@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project investigates the breakdown of the Black-Scholes constant volatility assumption through a comparative analysis of market regimes. Instead of relying on standard "black-box" libraries for option pricing, I engineered a custom, vectorized Implied Volatility solver from scratch using the Newton-Raphson method.
+This project investigates the breakdown of the Black-Scholes constant volatility assumption through a comparative analysis of market regimes. Instead of relying on standard off-the-shelf libraries for option pricing, I engineered a custom, vectorized Implied Volatility solver from scratch using the Newton-Raphson method.
 
 The core objective was to process a large-scale dataset (over 6.5 million contracts) to empirically demonstrate the "Volatility Smile" phenomenon and analyze how risk metrics (specifically Vega) behave during extreme market stress (the COVID-19 crash of March 2020) compared to a normal market environment (November 2021).
 
