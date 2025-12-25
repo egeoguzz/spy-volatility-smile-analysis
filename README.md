@@ -39,7 +39,7 @@ Vega scales with the underlying asset price ($S$).
 
 The ~40% drop in the spot price exerted a stronger downward pressure on the raw Vega calculation than the upward pressure from increased volatility. This highlights a critical distinction between percentage-based risk (IV) and dollar-based risk exposure.
 
-![Vega Term Structure Crisis vs Normal](images/crisis_vs_normal.png)
+![Vega Term Structure Crisis vs Normal](images/vega_term_structure.png)
 
 ### 3. Interactive Volatility Surface (3D Visualization)
 To visualize the complete volatility structure across all strikes and maturities simultaneously, I generated a 3D surface plot. This illustrates the "Smirk" effect across the term structure.
